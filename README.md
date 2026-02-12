@@ -73,7 +73,7 @@ Installation
 Clone the repository
 
 
-git clone https://github.com/Waithera006/Healthcareplus.git
+git clone https://github.com/Waithera006/healthcareplus.git
 cd healthcare-plus
 Install backend dependencies
 
