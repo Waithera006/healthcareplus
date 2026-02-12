@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare Plus - Compassionate Medical Care</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="cursor"></div>
+    <div id="cursor-trail"></div>
+
+    <!-- Navigation -->
+    <nav>
+        
+<div id="serverStatus" style="display: inline-block; margin-left: 10px; padding: 2px 8px; border-radius: 12px; font-size: 0.8rem; font-weight: bold;">
+    <span id="statusDot" style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: gray; margin-right: 5px;"></span>
+    <span id="statusText">Checking...</span>
+</div>
+        <div class="logo">[Hospital logo]</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#doctors">Doctors</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <a href="#" class="sign-in">Sign In</a>
+            <button class="btn-primary" onclick="openModal()">BOOK APPOINTMENT</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-image"><img src="hero.jpeg" alt="heroimage"></div>
+            <div class="hero-text">
+                <h1>Compassionate Care for You and Your Family</h1>
+                <p>Your health is our priority. We combine world-class medicine with personal warmth.</p>
+                <div class="hero-buttons">
+                    <button class="btn-secondary">Our Services</button>
+                    <button class="btn-secondary">Find a Doctor</button>
+                </div>
+                <div class="hero-ads">
+                    <div class="ad-badge">✓ Accredited</div>
+                    <div class="ad-badge">✓ 24/7 Emergency</div>
+                    <div class="ad-badge">✓ Award-Winning Staff</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <h2 class="section-title">Why Patients Trust Us</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-icon">🩺</div>
+                <h3>Expert Doctors</h3>
+                <p>Board-certified specialists with years of experience in their fields.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">⏱️</div>
+                <h3>Short Wait Times</h3>
+                <p>Efficient scheduling and patient flow for minimal waiting.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">💻</div>
+                <h3>Modern Technology</h3>
+                <p>State-of-the-art medical equipment and diagnostic tools.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">❤️</div>
+                <h3>Patient-Centered Care</h3>
+                <p>Your comfort and wellbeing are at the heart of everything we do.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <h2 class="section-title">Our Medical Services</h2>
+        <ul class="services-list">
+            <li class="service-item">
+                <div class="service-icon">❤️</div>
+                <div>
+                    <h3>Cardiology</h3>
+                    <p>Comprehensive heart care and cardiovascular services</p>
+                </div>
+            </li>
+            <li class="service-item">
+                <div class="service-icon">🦴</div>
+                <div>
+                    <h3>Orthopedics</h3>
+                    <p>Expert treatment for bones, joints, and muscles</p>
+                </div>
+            </li>
+            <li class="service-item">
+                <div class="service-icon">👶</div>
+                <div>
+                    <h3>Pediatrics</h3>
+                    <p>Specialized care for infants, children, and adolescents</p>
+                </div>
+            </li>
+            <li class="service-item">
+                <div class="service-icon">🚑</div>
+                <div>
+                    <h3>Emergency Care</h3>
+                    <p>24/7 emergency services with rapid response teams</p>
+                </div>
+            </li>
+            <li class="service-item">
+                <div class="service-icon">🤱</div>
+                <div>
+                    <h3>Maternity</h3>
+                    <p>Complete prenatal, delivery, and postnatal care</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <h2>Need to See a Doctor Today?</h2>
+        <p>Same-day appointments available for urgent needs.</p>
+        <button class="btn-cta">Call Now: (254) 123456</button>
+    </section>
+
+    <!-- Daily Health Tip -->
+    <section class="health-tip">
+        <h2>💡 Daily Health Tip</h2>
+        <div class="tip-content" id="healthTip"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-main">
+            <div class="footer-col">
+                <h3>OUR HOSPITAL</h3>
+                <p>Providing compassionate, quality healthcare to our community for over 20 years.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#doctors">Doctors</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <p>123*****<br>Healthcare City, HC 12345</p>
+                <p>Phone: (254) 123-456</p>
+                <p>Email: info@healthcare.com</p>
+            </div>
+            <div class="footer-col">
+                <div class="emergency-box">
+                    <h3>Emergency</h3>
+                    <p style="font-size: 1.5rem; font-weight: bold;">911</p>
+                    <p>or (254) 123-456</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-advanced">
+            <div class="map-placeholder">
+                <div>[Mini Map - Hospital Location]</div>
+            </div>
+            <div class="dynamic-images" id="dynamicImages">
+                <div class="dynamic-image active">[<img src="staff.jpeg" alt="medical staff">: Medical Staff]</div>
+                <div class="dynamic-image">[<img src="hospital.jpeg" alt="Modern facility">: Modern Facility]</div>
+                <div class="dynamic-image">[<img src="patient.jpeg" alt="patient care">: Patient Care]</div>
+                <div class="dynamic-image">[<img src="technology.jpeg" alt="Technology">: Technology]</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>Book an Appointment</h2>
+            <form onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="department">Department</label>
+                    <select id="department" required>
+                        <option value="">Select a department</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="orthopedics">Orthopedics</option>
+                        <option value="pediatrics">Pediatrics</option>
+                        <option value="emergency">Emergency Care</option>
+                        <option value="maternity">Maternity</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message (Optional)</label>
+                    <textarea id="message" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%;">Submit Appointment Request</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    </body>
+</html>
